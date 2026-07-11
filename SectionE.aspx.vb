@@ -90,6 +90,7 @@ Partial Class SectionE
             If Len(DBReader("BerServIndTotal") & "") > 0 Then BerServIndTotal.Text = DBReader("BerServIndTotal")
 
             'New Code July 2026
+            'E3.	ON-CALL SUPPORT
             SetTextBoxValue(DBReader("DirectPatientStaffPY"), txtDirectPatientStaffPY)
             SetTextBoxValue(DBReader("DirectPatientStaffHrsPY"), txtDirectPatientStaffHrsPY)
             SetTextBoxValue(DBReader("DirectPatientStaffCY"), txtDirectPatientStaffCY)
@@ -106,7 +107,27 @@ Partial Class SectionE
             SetTextBoxValue(DBReader("TotalOnCallStaffHrsPY"), txtTotalOnCallStaffHrsPY)
             SetTextBoxValue(DBReader("TotalOnCallStaffCY"), txtTotalOnCallStaffCY)
             SetTextBoxValue(DBReader("TotalOnCallStaffHrsCY"), txtTotalOnCallStaffHrsCY)
-
+            'E4.OTHER Services
+            SetTextBoxValue(DBReader("PainMgtPY"), txtPainMgtPY)
+            SetTextBoxValue(DBReader("PainMgtCY"), txtPainMgtCY)
+            SetTextBoxValue(DBReader("NursingVisitPY"), txtNursingVisitPY)
+            SetTextBoxValue(DBReader("NursingVisitCY"), txtNursingVisitCY)
+            SetTextBoxValue(DBReader("HospiceAidePY"), txtHospiceAidePY)
+            SetTextBoxValue(DBReader("HospiceAideCY"), txtHospiceAideCY)
+            SetTextBoxValue(DBReader("MedicalSocialPY"), txtMedicalSocialPY)
+            SetTextBoxValue(DBReader("MedicalSocialCY"), txtMedicalSocialCY)
+            SetTextBoxValue(DBReader("SpiritualPY"), txtSpiritualPY)
+            SetTextBoxValue(DBReader("SpiritualCY"), txtSpiritualCY)
+            SetTextBoxValue(DBReader("BereavementPY"), txtBereavementPY)
+            SetTextBoxValue(DBReader("BereavementCY"), txtBereavementCY)
+            SetTextBoxValue(DBReader("MedEquipPY"), txtMedEquipPY)
+            SetTextBoxValue(DBReader("MedEquipCY"), txtMedEquipCY)
+            SetTextBoxValue(DBReader("MedDeliveryPY"), txtMedDeliveryPY)
+            SetTextBoxValue(DBReader("MedDeliveryCY"), txtMedDeliveryCY)
+            SetTextBoxValue(DBReader("TherapeuticPY"), txtTherapeuticPY)
+            SetTextBoxValue(DBReader("TherapeuticCY"), txtTherapeuticCY)
+            SetTextBoxValue(DBReader("TotalOtherSevPY"), txtTotalOtherSevPY)
+            SetTextBoxValue(DBReader("TotalOtherSevCY"), txtTotalOtherSevCY)
         End While
         'DBReader.Close()
         'con.Close()
@@ -146,6 +167,7 @@ Partial Class SectionE
         strSQL = strSQL & " BerServIndTotal='" & BerServIndTotal.Text & "',"
 
         'New code 07/10/2026
+        'E3.	ON-CALL SUPPORT
         strSQL = strSQL & MapTextValueField(txtDirectPatientStaffPY, "DirectPatientStaffPY", False)
         strSQL = strSQL & MapTextValueField(txtDirectPatientStaffHrsPY, "DirectPatientStaffHrsPY", False)
         strSQL = strSQL & MapTextValueField(txtDirectPatientStaffCY, "DirectPatientStaffCY", False)
@@ -162,6 +184,27 @@ Partial Class SectionE
         strSQL = strSQL & MapTextValueField(txtTotalOnCallStaffHrsPY, "TotalOnCallStaffHrsPY", False)
         strSQL = strSQL & MapTextValueField(txtTotalOnCallStaffCY, "TotalOnCallStaffCY", False)
         strSQL = strSQL & MapTextValueField(txtTotalOnCallStaffHrsCY, "TotalOnCallStaffHrsCY", False)
+        'E4.	OTHER SERVICES
+        strSQL = strSQL & MapTextValueField(txtPainMgtPY, "PainMgtPY")
+        strSQL = strSQL & MapTextValueField(txtPainMgtCY, "PainMgtCY")
+        strSQL = strSQL & MapTextValueField(txtNursingVisitPY, "NursingVisitPY")
+        strSQL = strSQL & MapTextValueField(txtNursingVisitCY, "NursingVisitCY")
+        strSQL = strSQL & MapTextValueField(txtHospiceAidePY, "HospiceAidePY")
+        strSQL = strSQL & MapTextValueField(txtHospiceAideCY, "HospiceAideCY")
+        strSQL = strSQL & MapTextValueField(txtMedicalSocialPY, "MedicalSocialPY")
+        strSQL = strSQL & MapTextValueField(txtMedicalSocialCY, "MedicalSocialCY")
+        strSQL = strSQL & MapTextValueField(txtSpiritualPY, "SpiritualPY")
+        strSQL = strSQL & MapTextValueField(txtSpiritualCY, "SpiritualCY")
+        strSQL = strSQL & MapTextValueField(txtBereavementPY, "BereavementPY")
+        strSQL = strSQL & MapTextValueField(txtBereavementCY, "BereavementCY")
+        strSQL = strSQL & MapTextValueField(txtMedEquipPY, "MedEquipPY")
+        strSQL = strSQL & MapTextValueField(txtMedEquipCY, "MedEquipCY")
+        strSQL = strSQL & MapTextValueField(txtMedDeliveryPY, "MedDeliveryPY")
+        strSQL = strSQL & MapTextValueField(txtMedDeliveryCY, "MedDeliveryCY")
+        strSQL = strSQL & MapTextValueField(txtTherapeuticPY, "TherapeuticPY")
+        strSQL = strSQL & MapTextValueField(txtTherapeuticCY, "TherapeuticCY")
+        strSQL = strSQL & MapTextValueField(txtTotalOtherSevPY, "TotalOtherSevPY")
+        strSQL = strSQL & MapTextValueField(txtTotalOtherSevCY, "TotalOtherSevCY")
 
         strSQL = strSQL & " SectionE='" & int & "'"
         strSQL = strSQL & " where UserName='" & UserName.Text & "'"

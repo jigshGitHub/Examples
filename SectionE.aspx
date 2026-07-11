@@ -419,7 +419,7 @@
             var total = 0;
             inputs.forEach(function (input) {
                 // Parse the text value to a float number
-                var value = parseInt(input.value);
+                var value = parseFloat(input.value);
 
                 // If the input is empty or not a number (NaN), treat it as 0
                 if (!isNaN(value)) {
@@ -447,6 +447,16 @@
             // Select all inputs with the specific class name
             var inputs = document.querySelectorAll('.clsOCSHrsCY');
             document.getElementById("txtTotalOnCallStaffHrsCY").value = sumInputs(inputs);
+        }
+        function sumSvcsPY() {
+            // Select all inputs with the specific class name
+            var inputs = document.querySelectorAll('.clsSvcsPY');
+            document.getElementById("txtTotalOtherSevPY").value = sumInputs(inputs);
+        }
+        function sumSvcsCY() {
+            // Select all inputs with the specific class name
+            var inputs = document.querySelectorAll('.clsSvcsCY');
+            document.getElementById("txtTotalOtherSevCY").value = sumInputs(inputs);
         }
     </script>
     <style type="text/css">
@@ -885,13 +895,27 @@
                                 * Total number of Individuals who received bereavement services (d) is not the sum of a through c
                             </td>
                         </tr>
+                          <tr>
+                              <td colspan="2">
+                                  &nbsp;</td>
+                        </tr>
+                          <tr>
+                            <td colspan="2">
+                                <hr />
+                            </td>
+                        </tr>
+                       
+                        <tr>
+                            <td colspan="2">
+                                &nbsp;</td>
+                        </tr>  
                          <tr>
                             <td class="style15" width="30px" bgcolor="#CCCCCC" valign="top">
                                 &nbsp;E3.</td>
                             <td class="style15" bgcolor="#CCCCCC">
-                               E3. ON-CALL SUPPORT</td>
-                            </tr>
-                            <tr>
+                               ON-CALL SUPPORT</td>
+                        </tr>
+                        <tr>
                             <td class="style11">
                                 &nbsp;</td>
                             <td class="style12">
@@ -988,12 +1012,186 @@
                         <tr><td colspan="2">*
                             Direct Patient Care, Clinical Support, and General Support are separate categories of on-call. The number and hours in the three categories should total to All Hospice on-call support staff.
                             </td>
+                        </tr>                        
+                          <tr>
+                              <td colspan="2">
+                                  &nbsp;</td>
+                        </tr>
+                          <tr>
+                            <td colspan="2">
+                                <hr />
+                            </td>
+                        </tr>
+                       
+                        <tr>
+                            <td colspan="2">
+                                &nbsp;</td>
+                        </tr> 
+                         <tr>
+                            <td class="style15" width="30px" bgcolor="#CCCCCC" valign="top">
+                                &nbsp;E4.</td>
+                            <td class="style15" bgcolor="#CCCCCC">
+                               OTHER SERVICES</td>
                         </tr>
                         <tr>
                             <td class="style11">
                                 &nbsp;</td>
                             <td class="style12">
-                                &nbsp;</td>
+                                  Please report the total number of individuals served for the following services for Fiscal Years 2024 and 2025.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">        
+                                <table class="style32a" border="1" cellpadding="1" cellspacing="0">
+                                    <tr>
+                                        <th style="width:60%">Services</th>
+                                        <th>FY2024</th>
+                                        <th>FY2025</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1. Pain and Symptom Management</td>
+                                        <td>
+                                            <asp:TextBox ID="txtPainMgtPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsPY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvPainMgtPY" runat="server" ControlToValidate="txtPainMgtPY"
+                                                Text="*" ErrorMessage="Pain and Symptom Management required for FY2024"/>
+                                        </td>
+                                        <td>
+                                            <asp:TextBox ID="txtPainMgtCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsCY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvPainMgtCY" runat="server" ControlToValidate="txtPainMgtCY"
+                                                Text="*" ErrorMessage="Pain and Symptom Management required for FY2025"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Nursing Visits</td>
+                                        <td>
+                                            <asp:TextBox ID="txtNursingVisitPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsPY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvNursingVisitPY" runat="server" ControlToValidate="txtNursingVisitPY"
+                                                Text="*" ErrorMessage="Nursing Visits required for FY2024"/>
+                                        </td>
+                                        <td>
+                                            <asp:TextBox ID="txtNursingVisitCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsCY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfNursingVisitCY" runat="server" ControlToValidate="txtNursingVisitCY"
+                                                Text="*" ErrorMessage="Nursing Visits required for FY2025"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. Hospice Aide Services</td>
+                                        <td>
+                                            <asp:TextBox ID="txtHospiceAidePY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsPY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvHospiceAidePY" runat="server" ControlToValidate="txtHospiceAidePY"
+                                                Text="*" ErrorMessage="Hospice Aide Services required for FY2024"/>
+                                        </td>
+                                        <td>
+                                            <asp:TextBox ID="txtHospiceAideCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsCY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvHospiceAideCY" runat="server" ControlToValidate="txtHospiceAideCY"
+                                                Text="*" ErrorMessage="Hospice Aide Services required for FY2025"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. Medical Social Services</td>
+                                        <td>
+                                            <asp:TextBox ID="txtMedicalSocialPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsPY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvMedicalSocialPY" runat="server" ControlToValidate="txtMedicalSocialPY"
+                                                Text="*" ErrorMessage="Medical Social Services required for FY2024"/>
+                                        </td>
+                                        <td>
+                                            <asp:TextBox ID="txtMedicalSocialCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsCY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvMedicalSocialCY" runat="server" ControlToValidate="txtMedicalSocialCY"
+                                                Text="*" ErrorMessage="Medical Social Services required for FY2025"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5. Spiritual Counseling</td>
+                                        <td>
+                                            <asp:TextBox ID="txtSpiritualPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsPY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvSpiritualPY" runat="server" ControlToValidate="txtSpiritualPY"
+                                                Text="*" ErrorMessage="Spiritual Counseling required for FY2024"/>
+                                        </td>
+                                        <td>
+                                            <asp:TextBox ID="txtSpiritualCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsCY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvSpiritualCY" runat="server" ControlToValidate="txtSpiritualCY"
+                                                Text="*" ErrorMessage="Spiritual Counseling required for FY2025"/>
+                                        </td>
+                                    </tr>                                    
+                                    <tr>
+                                        <td>6. Bereavement Support</td>
+                                        <td>
+                                            <asp:TextBox ID="txtBereavementPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsPY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvBereavementPY" runat="server" ControlToValidate="txtBereavementPY"
+                                                Text="*" ErrorMessage="Bereavement Support required for FY2024"/>
+                                        </td>
+                                        <td>
+                                            <asp:TextBox ID="txtBereavementCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsCY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvBereavementCY" runat="server" ControlToValidate="txtBereavementCY"
+                                                Text="*" ErrorMessage="Bereavement Support required for FY2025"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7. Medical Equipment and Supplies</td>
+                                        <td>
+                                            <asp:TextBox ID="txtMedEquipPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsPY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvMedEquipPY" runat="server" ControlToValidate="txtMedEquipPY"
+                                                Text="*" ErrorMessage="Medical Equipment and Supplies required for FY2024"/>
+                                        </td>
+                                        <td>
+                                            <asp:TextBox ID="txtMedEquipCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsCY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvMedEquipCY" runat="server" ControlToValidate="txtMedEquipCY"
+                                                Text="*" ErrorMessage="Medical Equipment and Supplies required for FY2025"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8. Medication Delivery</td>
+                                        <td>
+                                            <asp:TextBox ID="txtMedDeliveryPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsPY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvMedDeliveryPY" runat="server" ControlToValidate="txtMedDeliveryPY"
+                                                Text="*" ErrorMessage="Medication Delivery required for FY2024"/>
+                                        </td>
+                                        <td>
+                                            <asp:TextBox ID="txtMedDeliveryCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsCY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvMedDeliveryCY" runat="server" ControlToValidate="txtMedDeliveryCY"
+                                                Text="*" ErrorMessage="Medication Delivery required for FY2025"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9. Therapeutic Services</td>
+                                        <td>
+                                            <asp:TextBox ID="txtTherapeuticPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsPY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvTherapeuticPY" runat="server" ControlToValidate="txtTherapeuticPY"
+                                                Text="*" ErrorMessage="Therapeutic Services required for FY2024"/>
+                                        </td>
+                                        <td>
+                                            <asp:TextBox ID="txtTherapeuticCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                onchange="return sumSvcsCY();" runat="server" onkeypress=" return allowonlynumbers();" />
+                                            <asp:RequiredFieldValidator ID="rfvTherapeuticCY" runat="server" ControlToValidate="txtTherapeuticCY"
+                                                Text="*" ErrorMessage="Therapeutic Services required for FY2025"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                         <td><b>Total</b></td>
+                                         <td><asp:TextBox ID="txtTotalOtherSevPY" Enabled="false" Columns="5" MaxLength="50" runat="server" />
+                                         </td>
+                                         <td><asp:TextBox ID="txtTotalOtherSevCY" Enabled="false" Columns="5" MaxLength="50" runat="server" />
+                                         </td>
+                                     </tr>
+                                </table>
+                            </td>
                         </tr>
                         <tr>
                             <td class="style11">
