@@ -800,8 +800,8 @@
                                                 ErrorMessage="Nursing Total Inpatient Staffing Agency FTEs is required" />
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="FTENursingIF1" runat="server" BackColor="#FFFFFF" Columns="5" 
-                                                MaxLength="10" Enabled="false" onkeyup="checknumberdec('FTENursingIF1');"></asp:TextBox> 
+                                            <asp:TextBox ID="FTENursingIF1" runat="server" Columns="5" 
+                                                MaxLength="10" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox> 
                                         </td>
                                     </tr>
                                     <tr>
@@ -819,8 +819,8 @@
                                                 ErrorMessage="Nursing Practitioner Total Inpatient Staffing Agency FTEs is required" />
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="FTENursingPractIF1" runat="server" BackColor="#FFFFFF" Columns="5" 
-                                            MaxLength="10" Enabled="false" onkeyup="checknumberdec('FTENursingPractIF1');"></asp:TextBox>
+                                            <asp:TextBox ID="FTENursingPractIF1" runat="server" Columns="5" 
+                                            MaxLength="10" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
@@ -841,8 +841,8 @@
                                                 ErrorMessage="Social Services Total Inpatient Staffing Agency FTEs is required" />
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="FTESocialIF1" runat="server" BackColor="#FFFFFF" Columns="5" 
-                                                MaxLength="10" Enabled="false" onkeyup="checknumberdec('FTESocialIF1');"></asp:TextBox>
+                                            <asp:TextBox ID="FTESocialIF1" runat="server" Columns="5" 
+                                                MaxLength="10" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
@@ -859,8 +859,8 @@
                                                 ErrorMessage="Hospice Aides Total Inpatient Staffing Agency FTEs is required" />
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="FTEHHAIF1" runat="server" BackColor="#FFFFFF" Columns="5" 
-                                                MaxLength="10" Enabled="false" onkeyup="checknumberdec('FTEHHAIF1');"></asp:TextBox>
+                                            <asp:TextBox ID="FTEHHAIF1" runat="server" Columns="5" 
+                                                MaxLength="10" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
@@ -879,8 +879,8 @@
                                                 ErrorMessage="Physicians - Paid Total Inpatient Staffing Agency FTEs is required" />
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="FTEMDIF1" runat="server" BackColor="#FFFFFF" Columns="5" 
-                                                MaxLength="10" Enabled="false" onkeyup="checknumberdec('FTEMDIF1');"></asp:TextBox>
+                                            <asp:TextBox ID="FTEMDIF1" runat="server" Columns="5" 
+                                                MaxLength="10" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
@@ -897,8 +897,8 @@
                                                 ErrorMessage="Physicians – Volunteer Total Inpatient Staffing Agency FTEs is required" />
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="FTEMDVolIF1" runat="server" BackColor="#FFFFFF" Columns="5" 
-                                                MaxLength="10" Enabled="false" onkeyup="checknumberdec('FTEMDVolIF1');"></asp:TextBox>
+                                            <asp:TextBox ID="FTEMDVolIF1" runat="server" Columns="5" 
+                                                MaxLength="10" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
@@ -915,8 +915,8 @@
                                                 ErrorMessage="Chaplains Total Inpatient Staffing Agency FTEs is required" />
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="FTEChapIF1" runat="server" BackColor="#FFFFFF" Columns="5" 
-                                                MaxLength="10" Enabled="false" onkeyup="checknumberdec('FTEChapIF1');"></asp:TextBox>
+                                            <asp:TextBox ID="FTEChapIF1" runat="server" Columns="5" 
+                                                MaxLength="10" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
@@ -935,8 +935,8 @@
                                                 ErrorMessage="Other Clinical Inpatient Staffing Agency FTEs is required" />
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="FTEOtherClinicalIF1" runat="server" BackColor="#FFFFFF" Columns="5" 
-                                                MaxLength="10" Enabled="false" onkeyup="checknumberdec('FTEOtherClinicalIF1');"></asp:TextBox>
+                                            <asp:TextBox ID="FTEOtherClinicalIF1" runat="server" Columns="5" 
+                                                MaxLength="10" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
@@ -953,18 +953,18 @@
                                                 ErrorMessage="Non-Clinical Inpatient Staffing Agency FTEs is required" />
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="FTENonClinicalIF1" runat="server" BackColor="#FFFFFF" Columns="5" 
-                                                MaxLength="10" Enabled="false" onkeyup="checknumberdec('FTENonClinicalIF1');"></asp:TextBox>
+                                            <asp:TextBox ID="FTENonClinicalIF1" runat="server" Columns="5" 
+                                                MaxLength="10" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             Total</td>
-                                        <td><asp:TextBox ID="EmpTotal" runat="server" BackColor="#FFFFFF" Columns="5" MaxLength="10" Enabled="false"></asp:TextBox>
+                                        <td><asp:TextBox ID="EmpTotal" runat="server" Columns="5" MaxLength="10" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                         </td>
-                                        <td><asp:TextBox ID="StaffTotal" runat="server" BackColor="#FFFFFF" Columns="5" MaxLength="10" Enabled="false"></asp:TextBox>
+                                        <td><asp:TextBox ID="StaffTotal" runat="server" Columns="5" MaxLength="10" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                         </td>
-                                        <td><asp:TextBox ID="FTETotal" runat="server" BackColor="#FFFFFF" Columns="5" MaxLength="10" Enabled="false"></asp:TextBox>
+                                        <td><asp:TextBox ID="FTETotal" runat="server" Columns="5" MaxLength="10" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                         </td>
                                     </tr>
                                 </table>

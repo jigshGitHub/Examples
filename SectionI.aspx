@@ -585,7 +585,7 @@
                                                 ErrorMessage="Nursing Total Hospice House Staffing Agency FTEs is required" />
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="ResNursFTE1" runat="server" BackColor="#FFFFFF" Columns="5" MaxLength="10"  onkeyup="checknumberdec('ResNursFTE1');" Enabled="false"></asp:TextBox>
+                                            <asp:TextBox ID="ResNursFTE1" runat="server" Columns="5" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                             <br />
                                         </td>
                                     </tr>
@@ -604,8 +604,7 @@
                                                 ErrorMessage="Nurse Practitioner Total Hospice House Staffing Agency FTEs is required" />
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="ResNursPractFTE1" runat="server" Columns="5" BackColor="#FFFFFF"
-                                            MaxLength="10" onkeyup="checknumberdec('ResNursPractFTE1');" Enabled="false"></asp:TextBox>
+                                            <asp:TextBox ID="ResNursPractFTE1" runat="server" Columns="5" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
@@ -626,8 +625,7 @@
                                                  ErrorMessage="Social Services Total Hospice House Staffing Agency FTEs is required" />
                                          </td>
                                         <td>
-                                            <asp:TextBox ID="ResSSFTE1" runat="server" BackColor="#FFFFFF" Columns="5" 
-                                                MaxLength="10" onkeyup="checknumberdec('ResSSFTE1');" Enabled="false"></asp:TextBox>
+                                            <asp:TextBox ID="ResSSFTE1" runat="server" Columns="5" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                             <br />
                                         </td>
                                     </tr>
@@ -643,7 +641,7 @@
                                              <asp:RequiredFieldValidator ID="rfvResStaffHHA" runat="server" ControlToValidate="ResStaffHHA" Text="*"
                                                  ErrorMessage="Hospice Aides Total Hospice House Staffing Agency FTEs is required" />
                                          </td>
-                                        <td><asp:TextBox ID="ResHHAFTE1" runat="server" BackColor="#FFFFFF" Columns="5" MaxLength="10"  onkeyup="checknumberdec('ResHHAFTE1');" Enabled="false"></asp:TextBox>
+                                        <td><asp:TextBox ID="ResHHAFTE1" runat="server" Columns="5" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                             <br />
                                         </td>
                                     </tr>
@@ -663,8 +661,7 @@
                                                  ErrorMessage="Physicians – Paid Total Hospice House Staffing Agency FTEs is required" />
                                          </td>
                                         <td>
-                                            <asp:TextBox ID="ResPhyPFTE1" runat="server" BackColor="#FFFFFF" Columns="5" 
-                                                MaxLength="10"  onkeyup="checknumberdec('ResPhyPFTE1');" Enabled="false"></asp:TextBox>
+                                            <asp:TextBox ID="ResPhyPFTE1" runat="server" Columns="5" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                             <br />
                                         </td>
                                     </tr>
@@ -681,7 +678,7 @@
                                                  ErrorMessage="Physicians – Volunteer Total Hospice House Staffing Agency FTEs is required" />
                                          </td>
                                         <td>
-                                            <asp:TextBox ID="ResPhyVFTE1" runat="server" BackColor="#FFFFFF" Columns="5" MaxLength="10"  onkeyup="checknumberdec('ResPhyVFTE1');" Enabled="false"></asp:TextBox>
+                                            <asp:TextBox ID="ResPhyVFTE1" runat="server" Columns="5" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                             <br />
                                         </td>
                                     </tr>
@@ -698,7 +695,7 @@
                                                  ErrorMessage="Chaplains Total Hospice House Staffing Agency FTEs is required" />
                                          </td>
                                         <td>
-                                            <asp:TextBox ID="ResChapFTE1" runat="server" BackColor="#FFFFFF" Columns="5" MaxLength="10"  onkeyup="checknumberdec('ResChapFTE1');" Enabled="false"></asp:TextBox>
+                                            <asp:TextBox ID="ResChapFTE1" runat="server" Columns="5" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                             <br />
                                         </td>
                                     </tr>
@@ -718,7 +715,7 @@
                                                  ErrorMessage="Other Clinical Total Hospice House Staffing Agency FTEs is required" />
                                          </td>
                                         <td>
-                                            <asp:TextBox ID="ResOthFTE1" runat="server" BackColor="#FFFFFF" Columns="5" MaxLength="10"  onkeyup="checknumberdec('ResOthFTE1');" Enabled="false"></asp:TextBox>
+                                            <asp:TextBox ID="ResOthFTE1" runat="server" Columns="5" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                             <br />
                                         </td>
                                     </tr>
@@ -736,19 +733,18 @@
                                                  ErrorMessage="Other Clinical Total Hospice House Staffing Agency FTEs is required" />
                                          </td>
                                         <td>
-                                            <asp:TextBox ID="ResNonFTE1" runat="server" BackColor="#FFFFFF" Columns="5" 
-                                                MaxLength="10"  onkeyup="checknumberdec('ResNonFTE1');" Enabled="false"></asp:TextBox>
+                                            <asp:TextBox ID="ResNonFTE1" runat="server" Columns="5" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                             <br />
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             Total</td>
-                                        <td><asp:TextBox ID="ResEmpTotal" runat="server" BackColor="#FFFFFF" Columns="5" MaxLength="10" Enabled="false"></asp:TextBox>
+                                        <td><asp:TextBox ID="ResEmpTotal" runat="server" Columns="5" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                         </td>
-                                        <td><asp:TextBox ID="ResStaffTotal" runat="server" BackColor="#FFFFFF" Columns="5" MaxLength="10" Enabled="false"></asp:TextBox>
+                                        <td><asp:TextBox ID="ResStaffTotal" runat="server" Columns="5" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                         </td>
-                                        <td><asp:TextBox ID="ResFTETotal" runat="server" BackColor="#FFFFFF" Columns="5" MaxLength="10" Enabled="false"></asp:TextBox>
+                                        <td><asp:TextBox ID="ResFTETotal" runat="server" Columns="5" BackColor="#FFFFCC" onkeydown="return false"></asp:TextBox>
                                         </td>
                                     </tr>
                                 </table>
