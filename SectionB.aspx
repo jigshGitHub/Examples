@@ -1705,9 +1705,11 @@
                                                     <td>7. Occupancy Rate</td>
                                                     <td><asp:TextBox ID="txtORPY" runat="server" BackColor="#FFFFFF" Columns="15" MaxLength="10" onkeyup="validateDecimal(this);"></asp:TextBox>
                                                         <asp:RequiredFieldValidator ID="rfvORPY" runat="server" ControlToValidate="txtORPY" ErrorMessage="Occupancy Rate required for FY 2024" Text="*"></asp:RequiredFieldValidator>
+                                                        <asp:RangeValidator ID="rvORPY" runat="server" ControlToValidate="txtORPY" MinimumValue="0" MaximumValue="100" Type="Double" ErrorMessage="Occupancy Rate should be in range from 0 to 100" Text="*"></asp:RangeValidator>
                                                     </td>
                                                     <td><asp:TextBox ID="txtORCY" runat="server" BackColor="#FFFFFF" Columns="15" MaxLength="10" onkeyup="validateDecimal(this);"></asp:TextBox>
                                                         <asp:RequiredFieldValidator ID="rfvORCY" runat="server" ControlToValidate="txtORCY" ErrorMessage="Occupancy Rate required for FY 2025" Text="*"></asp:RequiredFieldValidator>
+                                                        <asp:RangeValidator ID="rvORCY" runat="server" ControlToValidate="txtORCY" MinimumValue="0" MaximumValue="100" Type="Double" ErrorMessage="Occupancy Rate should be in range from 0 to 100" Text="*"></asp:RangeValidator>
                                                     </td>
                                                 </tr>
                                             </table>

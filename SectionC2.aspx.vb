@@ -608,29 +608,6 @@ Partial Class SectionC2
     End Sub
     'New code 07/08/2026
 #Region "Newcode functions"
-    Private Sub SetTextBoxValue(ByVal dbReaderValue As Object, ByVal txtBx As TextBox)
-        If Not IsDBNull(dbReaderValue) And Len(dbReaderValue & "") > 0 Then
-            txtBx.Text = dbReaderValue
-        End If
-    End Sub
-    Private Sub SetCheckboxSelection(ByVal dbReaderValue As Object, ByVal chkBx As CheckBox)
-        If Not IsDBNull(dbReaderValue) Then
-            chkBx.Checked = dbReaderValue
-        End If
-    End Sub
-    Private Sub SetRadiobuttonLstSelection(ByVal dbReaderValue As Object, ByVal rbList As RadioButtonList)
-        If Not IsDBNull(dbReaderValue) Then
-            rbList.Items.FindByValue(dbReaderValue).Selected = True
-        End If
-    End Sub
-    Private Sub SetDropdownLstSelection(ByVal dbReaderValue As Object, ByVal ddList As DropDownList)
-        If Not IsDBNull(dbReaderValue) Then
-            ddList.Items.FindByValue(dbReaderValue).Selected = True
-        End If
-    End Sub
-    Private Function MapTextValueField(ByVal txtBx As TextBox, ByVal dbField As String, Optional includeComa As Boolean = True) As String
-        Return IIf(txtBx.Text.Length > 0, dbField & " = '" & txtBx.Text & "'" & IIf(includeComa, ",", ""), "")
-    End Function
 
     Private Sub SetTextBox(ByVal textBx As TextBox, ByVal rfv As RequiredFieldValidator, ByVal isEnabled As Boolean)
         textBx.Enabled = isEnabled

@@ -5263,6 +5263,244 @@
                                 sum of a through c
                             </td>
                         </tr>
+                        
+                        <tr>
+                            <td colspan="2">
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#CCCCCC" class="style15" valign="top" width="30px">
+                                &nbsp;E3.</td>
+                            <td bgcolor="#CCCCCC" class="style15">
+                                ON-CALL SUPPORT</td>
+                        </tr>
+                        <tr>
+                            <td class="style11">
+                                &nbsp;</td>
+                            <td class="style12">
+                                  Please provide the following information for On-Call Staff for Fiscal Years 2024 and 2025.
+                                  <p>The number of on-call support staff should be an unduplicated count, with no individuals included in more than one category, even if they engage in more than one type of on-call service.</p>
+                                  <p>On-Call Staff who contributed hours in more than one service category should provide the number of hours for each category.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style11">
+                                &nbsp;</td>
+                            <td class="style12">
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">        
+                                <table class="style32a" border="1" cellpadding="1" cellspacing="0">
+                                    <tr>
+                                        <th style="width:60%">On-Call Support</th>
+                                        <th colspan="2">FY2024</th>
+                                        <th colspan="2">FY2025</th>
+                                    </tr>
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th>Number</th>
+                                        <th>Hours</th>
+                                        <th>Number</th>
+                                        <th>Hours</th>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Direct Patient Care On-Call Staff</b><br />Direct patient care on-call staff are defined as 
+                                            on-call staff who spend time with patients and families
+                                        </td>
+                                        <td><asp:TextBox ID="txtDirectPatientStaffPY" CssClass="clsOCSNumPY" runat="server" Columns="5" /></td>
+                                        <td><asp:TextBox ID="txtDirectPatientStaffHrsPY" CssClass="clsOCSHrsPY" runat="server" Columns="5" /></td>
+                                        <td><asp:TextBox ID="txtDirectPatientStaffCY" CssClass="clsOCSNumCY" runat="server" Columns="5" /></td>
+                                        <td><asp:TextBox ID="txtDirectPatientStaffHrsCY" CssClass="clsOCSHrsCY" runat="server" Columns="5" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Clinical Support On-Call Staff</b>
+                                        </td>
+                                        <td><asp:TextBox ID="txtClinicalStaffPY" CssClass="clsOCSNumPY" runat="server" Columns="5" /></td>
+                                        <td><asp:TextBox ID="txtClinicalStaffHrsPY" CssClass="clsOCSHrsPY" runat="server" Columns="5" /></td>
+                                        <td><asp:TextBox ID="txtClinicalStaffCY" CssClass="clsOCSNumCY" runat="server" Columns="5" /></td>
+                                        <td><asp:TextBox ID="txtClinicalStaffHrsCY" CssClass="clsOCSHrsCY" runat="server" Columns="5" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>General Support On-Call Staff</b>
+                                        </td>
+                                        <td><asp:TextBox ID="txtGeneralStaffPY" CssClass="clsOCSNumPY" runat="server" Columns="5" /></td>
+                                        <td><asp:TextBox ID="txtGeneralStaffHrsPY" CssClass="clsOCSHrsPY" runat="server" Columns="5" /></td>
+                                        <td><asp:TextBox ID="txtGeneralStaffCY" CssClass="clsOCSNumCY" runat="server" Columns="5" /></td>
+                                        <td><asp:TextBox ID="txtGeneralStaffHrsCY" CssClass="clsOCSHrsCY" runat="server" Columns="5" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Total On-Call Staff</b>
+                                        </td>
+                                        <td><asp:TextBox ID="txtTotalOnCallStaffPY" runat="server" BackColor="#FFFFCC" 
+                                                columns="5" MaxLength="10" onkeydown="return false" />                                                
+                                        </td>
+                                        <td><asp:TextBox ID="txtTotalOnCallStaffHrsPY" runat="server" BackColor="#FFFFCC" 
+                                                columns="5" MaxLength="10" onkeydown="return false"/>
+                                        </td>
+                                        <td><asp:TextBox ID="txtTotalOnCallStaffCY" runat="server" BackColor="#FFFFCC" 
+                                                columns="5" MaxLength="10" onkeydown="return false"/>
+                                        </td>
+                                        <td><asp:TextBox ID="txtTotalOnCallStaffHrsCY" runat="server" BackColor="#FFFFCC" 
+                                                columns="5" MaxLength="10" onkeydown="return false" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr><td colspan="2">*
+                            Direct Patient Care, Clinical Support, and General Support are separate categories of on-call. The number and hours in the three categories should total to All Hospice on-call support staff.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#CCCCCC" class="style15" valign="top" width="30px">
+                                &nbsp;E4.</td>
+                            <td bgcolor="#CCCCCC" class="style15">
+                                OTHER SERVICES</td>
+                        </tr>
+                        <tr>
+                            <td class="style11">
+                                &nbsp;</td>
+                            <td class="style12">
+                                  Please report the total number of individuals served for the following services for Fiscal Years 2024 and 2025.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style11">
+                                &nbsp;</td>
+                            <td class="style12">
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"> 
+                                <table class="style32a" border="1" cellpadding="1" cellspacing="0">
+                                    <tr>
+                                        <th style="width:60%">Services</th>
+                                        <th>FY2024</th>
+                                        <th>FY2025</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1. Pain and Symptom Management</td>
+                                        <td>
+                                            <asp:TextBox ID="txtPainMgtPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                        <td>
+                                            <asp:TextBox ID="txtPainMgtCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Nursing Visits</td>
+                                        <td>
+                                            <asp:TextBox ID="txtNursingVisitPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                        <td>
+                                            <asp:TextBox ID="txtNursingVisitCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. Hospice Aide Services</td>
+                                        <td>
+                                            <asp:TextBox ID="txtHospiceAidePY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                        <td>
+                                            <asp:TextBox ID="txtHospiceAideCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. Medical Social Services</td>
+                                        <td>
+                                            <asp:TextBox ID="txtMedicalSocialPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                        <td>
+                                            <asp:TextBox ID="txtMedicalSocialCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5. Spiritual Counseling</td>
+                                        <td>
+                                            <asp:TextBox ID="txtSpiritualPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                        <td>
+                                            <asp:TextBox ID="txtSpiritualCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                    </tr>                                    
+                                    <tr>
+                                        <td>6. Bereavement Support</td>
+                                        <td>
+                                            <asp:TextBox ID="txtBereavementPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                        <td>
+                                            <asp:TextBox ID="txtBereavementCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7. Medical Equipment and Supplies</td>
+                                        <td>
+                                            <asp:TextBox ID="txtMedEquipPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                        <td>
+                                            <asp:TextBox ID="txtMedEquipCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8. Medication Delivery</td>
+                                        <td>
+                                            <asp:TextBox ID="txtMedDeliveryPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                        <td>
+                                            <asp:TextBox ID="txtMedDeliveryCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9. Therapeutic Services</td>
+                                        <td>
+                                            <asp:TextBox ID="txtTherapeuticPY" CssClass="clsSvcsPY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                        <td>
+                                            <asp:TextBox ID="txtTherapeuticCY" CssClass="clsSvcsCY" Columns="5" MaxLength="50"
+                                                runat="server" /></td>
+                                    </tr>
+                                    <tr>
+                                         <td><b>Total</b></td>
+                                         <td><asp:TextBox ID="txtTotalOtherSevPY" runat="server" BackColor="#FFFFCC" 
+                                                columns="5" MaxLength="10" onkeydown="return false" />
+                                         </td>
+                                         <td><asp:TextBox ID="txtTotalOtherSevCY" runat="server" BackColor="#FFFFCC" 
+                                                columns="5" MaxLength="10" onkeydown="return false" />
+                                         </td>
+                                     </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="style11">
+                                &nbsp;</td>
+                            <td class="style12">
+                                &nbsp;</td>
+                        </tr>
                     </table>
                 </td>
             </tr>
@@ -5459,13 +5697,13 @@
                             <td colspan="2">
                                 <table border="1" cellpadding="1" cellspacing="0" class="style32a">
                                     <tr>
-                                        <td class="style37" valign="top" width="200px">
-                                            &nbsp;</td>
-                                        <td class="style36" valign="top">
-                                            Total Home Hospice FTEs</td>
                                         <td class="style37" valign="top">
-                                            Total Employees (on last day of FY <asp:Label ID="SY30" runat="server"></asp:Label>
-                                            , no PRN)</td>
+                                            &nbsp;</td>
+                                        <td class="style37" valign="top">
+                                            Total Home Hospice FTEs</td>                                        
+                                        <td class="style37" valign="top">Total Staffing Agency FTEs</td>
+                                        <td class="style37" valign="top">
+                                            Total Employees Including Staffing Agency Support Staff (No PRN) on last day of FY <asp:Label ID="SY30" runat="server"></asp:Label></td>
                                         <td class="style37" valign="top">
                                             Total PRN Employees</td>
                                         <td class="style37" valign="top">
@@ -5482,6 +5720,9 @@
                                             <asp:TextBox ID="FTEDirNursing" runat="server" BackColor="#FFFFFF" Columns="10" 
                                                 MaxLength="10" onkeyup="allowDecimals('FTEDirNursing');"></asp:TextBox>
                                         </td>
+                                        <td class="style35">
+                                             <asp:TextBox ID="TotStaffingDirNursing" runat="server" BackColor="#FFFFFF" Columns="10" 
+                                                MaxLength="10"></asp:TextBox></td>
                                         <td>
                                             <asp:TextBox ID="TotEmployDirNursing" runat="server" BackColor="#FFFFFF" 
                                                 Columns="10" MaxLength="10" onkeyup="allowonlynumbers('TotEmployDirNursing');"></asp:TextBox>
@@ -5496,7 +5737,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td width="300px">
+                                        <td>
                                             <b>Nursing – Indirect Clinical</b><br /> Include intake staff, educators, 
                                             quality improvement, managers, and liaison nurses with clinical background, but 
                                             who do not provide direct care.</td>
@@ -5504,6 +5745,9 @@
                                             <asp:TextBox ID="FTEIndNursing" runat="server" BackColor="#FFFFFF" Columns="10" 
                                                 MaxLength="10" onkeyup="allowDecimals('FTEIndNursing');"></asp:TextBox>
                                         </td>
+                                        <td class="style35">
+                                             <asp:TextBox ID="TotStaffingIndNursing" runat="server" BackColor="#FFFFFF" Columns="10" 
+                                                MaxLength="10"></asp:TextBox></td>
                                         <td>
                                             <asp:TextBox ID="TotEmployIndNursing" runat="server" BackColor="#FFFFFF" 
                                                 Columns="10" MaxLength="10" onkeyup="allowonlynumbers('TotEmployIndNursing');"></asp:TextBox>
@@ -5518,12 +5762,16 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td width="300px">
+                                        <td>
                                             <strong>Nurse Practitioner</strong><br /> Include nurses with an advanced degree 
                                             who function and are licensed as a Nurse Practitioner.</td>
                                         <td class="style35">
                                             <asp:TextBox ID="FTEPractNursing" runat="server" BackColor="#FFFFFF" Columns="10" 
                                             MaxLength="10" onkeyup="allowDecimals('FTEPractNursing');"></asp:TextBox>
+                                        </td>
+                                        <td class="style35">
+                                            <asp:TextBox ID="TotStaffingPractNursing" runat="server" BackColor="#FFFFFF" Columns="10" 
+                                            MaxLength="10"></asp:TextBox>
                                         </td>
                                         <td>
                                             <asp:TextBox ID="TotEmployPractNursing" runat="server" BackColor="#FFFFFF" Columns="10" 
@@ -5539,13 +5787,17 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td width="300px">
+                                        <td>
                                             <b>Social Services</b><br /> Include medical social services staff as defined by 
                                             CMS for the cost report. <i>Do <u>not</u> include chaplains or bereavement 
                                             staff.</i></td>
                                         <td class="style35">
                                             <asp:TextBox ID="FTESocial" runat="server" BackColor="#FFFFFF" Columns="10" 
                                                 MaxLength="10" onkeyup="allowDecimals('FTESocial');"></asp:TextBox>
+                                        </td>
+                                        <td class="style35">
+                                            <asp:TextBox ID="TotStaffingSocial" runat="server" BackColor="#FFFFFF" Columns="10" 
+                                            MaxLength="10"></asp:TextBox>
                                         </td>
                                         <td>
                                             <asp:TextBox ID="TotEmploySocial" runat="server" BackColor="#FFFFFF" 
@@ -5561,7 +5813,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td width="300px">
+                                        <td>
                                             <b>Hospice Aides</b>
                                             <br />
                                             Include both aides and homemakers</td>
@@ -5569,6 +5821,9 @@
                                             <asp:TextBox ID="FTEHHA" runat="server" BackColor="#FFFFFF" Columns="10" 
                                                 MaxLength="10" onkeyup="allowDecimals('FTEHHA');"></asp:TextBox>
                                         </td>
+                                        <td class="style35">
+                                            <asp:TextBox ID="TotStaffingHHA" runat="server" BackColor="#FFFFFF" Columns="10" 
+                                                MaxLength="10"></asp:TextBox></td>
                                         <td>
                                             <asp:TextBox ID="TotEmployHHA" runat="server" BackColor="#FFFFFF" Columns="10" 
                                                 MaxLength="10" onkeyup="allowonlynumbers('TotEmployHHA');"></asp:TextBox>
@@ -5583,7 +5838,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td width="300px">
+                                        <td>
                                             <b>Physicians – Paid</b><br /> Include medical directors and other physicians 
                                             providing direct care to patients and participating in clinical support.
                                             <br />
@@ -5592,6 +5847,9 @@
                                             <asp:TextBox ID="FTEMD" runat="server" BackColor="#FFFFFF" Columns="10" 
                                                 MaxLength="10" onkeyup="allowDecimals('FTEMD');"></asp:TextBox>
                                         </td>
+                                        <td>
+                                             <asp:TextBox ID="TotStaffingMD" runat="server" BackColor="#FFFFFF" Columns="10" 
+                                                MaxLength="10"></asp:TextBox></td>
                                         <td>
                                             <asp:TextBox ID="TotEmployMD" runat="server" BackColor="#FFFFFF" Columns="10" 
                                                 MaxLength="10" onkeyup="allowonlynumbers('TotEmployMD');"></asp:TextBox>
@@ -5613,6 +5871,9 @@
                                                 MaxLength="10" onkeyup="allowDecimals('FTEMDVol');"></asp:TextBox>
                                         </td>
                                         <td>
+                                            <asp:TextBox ID="TotStaffingMDVol" runat="server" BackColor="#FFFFFF" Columns="10" 
+                                                MaxLength="10"></asp:TextBox></td>
+                                        <td>
                                             <asp:TextBox ID="TotEmployMDVol" runat="server" BackColor="#FFFFFF" 
                                                 Columns="10" MaxLength="10" onkeyup="allowonlynumbers('TotEmployMDVol');"></asp:TextBox>
                                         </td>
@@ -5633,6 +5894,9 @@
                                                 MaxLength="10" onkeyup="allowDecimals('FTEChap');"></asp:TextBox>
                                         </td>
                                         <td>
+                                           <asp:TextBox ID="TotStaffingChap" runat="server" BackColor="#FFFFFF" Columns="10" 
+                                                MaxLength="10"></asp:TextBox></td>
+                                        <td>
                                             <asp:TextBox ID="TotEmployChap" runat="server" BackColor="#FFFFFF" Columns="10" 
                                                 MaxLength="10" onkeyup="allowonlynumbers('TotEmployChap');"></asp:TextBox>
                                         </td>
@@ -5646,7 +5910,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td width="300px">
+                                        <td>
                                             <b>Other Clinical</b>
                                             <br />
                                             Include any paid staff in addition to those captured above who provide direct 
@@ -5657,6 +5921,9 @@
                                             <asp:TextBox ID="FTEOtherClinical" runat="server" BackColor="#FFFFFF" 
                                                 Columns="10" MaxLength="10" onkeyup="allowDecimals('FTEOtherClinical');"></asp:TextBox>
                                         </td>
+                                        <td>
+                                            <asp:TextBox ID="TotStaffingOtherClinical" runat="server" BackColor="#FFFFFF" 
+                                                Columns="10" MaxLength="10"></asp:TextBox></td>
                                         <td>
                                             <asp:TextBox ID="TotEmployOtherClinical" runat="server" BackColor="#FFFFFF" 
                                                 Columns="10" MaxLength="10" 
@@ -5672,7 +5939,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td width="300px">
+                                        <td>
                                             <b>Bereavement</b>
                                             <br />
                                             Include all paid staff providing bereavement services, including pre-death grief 
@@ -5681,6 +5948,9 @@
                                             <asp:TextBox ID="FTEBereavement" runat="server" BackColor="#FFFFFF" 
                                                 Columns="10" MaxLength="10" onkeyup="allowDecimals('FTEBereavement');"></asp:TextBox>
                                         </td>
+                                        <td>
+                                            <asp:TextBox ID="TotStaffingBereavement" runat="server" BackColor="#FFFFFF" 
+                                                Columns="10" MaxLength="10"></asp:TextBox></td>
                                         <td>
                                             <asp:TextBox ID="TotEmployBereavement" runat="server" BackColor="#FFFFFF" 
                                                 Columns="10" MaxLength="10" onkeyup="allowonlynumbers('TotEmployBereavement');"></asp:TextBox>
@@ -5728,10 +5998,10 @@
                                             &nbsp;</td>
                                         <td>
                                             <b>Total Home Hospice FTEs</b></td>
+                                        <td><b>Total Staffing Agency FTEs</b></td>  
                                         <td>
-                                            <b>Total Employees (on last day of FY
-                                            <asp:Label ID="SY7" runat="server"></asp:Label>
-                                            , no PRN)</b></td>
+                                            <b>Total Employees including Staffing Agency Support Staff (No PRN) on last day of FY
+                                            <asp:Label ID="SY7" runat="server"></asp:Label></td>
                                         <td width="70px">
                                             <b>Total PRN Employees</b></td>
                                         <td width="70px">
@@ -5752,6 +6022,9 @@
                                             HeaderText="I.&lt;BR&gt;Discharges" HtmlEncode="False" 
                                             ItemStyle-HorizontalAlign="right" />--%>
                                         </td>
+                                        <td>       
+                                            <asp:TextBox ID="TotStaffingClinical" runat="server" BackColor="#FFFFFF" Columns="10" 
+                                                MaxLength="10"></asp:TextBox><br /></td>
                                         <td>
                                             <asp:TextBox ID="TotEmployClinical" runat="server" BackColor="#FFFFFF" 
                                                 Columns="10" MaxLength="10" onkeyup="allowonlynumbers('TotEmployClinical');"></asp:TextBox>
@@ -5788,7 +6061,10 @@
                                         <td>
                                             <asp:TextBox ID="FTENonClinical" runat="server" BackColor="#FFFFFF" 
                                                 Columns="10" MaxLength="10" onkeyup="allowDecimals('FTENonClinical');"></asp:TextBox>
-                                        </td>
+                                        </td>    
+                                        <td>
+                                            <asp:TextBox ID="TotStaffingNonClinical" runat="server" BackColor="#FFFFFF" Columns="10" 
+                                            MaxLength="10"></asp:TextBox></td>
                                         <td>
                                             <asp:TextBox ID="TotEmployNonClinical" runat="server" BackColor="#FFFFFF" 
                                                 Columns="10" MaxLength="10" onkeyup="allowonlynumbers('TotEmployNonClinical');"></asp:TextBox>
@@ -5816,6 +6092,9 @@
                                             HeaderText="I.&lt;BR&gt;Discharges" HtmlEncode="False" 
                                             ItemStyle-HorizontalAlign="right" />--%>
                                         </td>
+                                        <td>
+                                            <asp:TextBox ID="TotStaffingTotal" runat="server" BackColor="#FFFFFF" Columns="10" 
+                                            MaxLength="10"></asp:TextBox><br /></td>
                                         <td>
                                             <asp:TextBox ID="TotEmployTotal" runat="server" BackColor="#FFFFFF" 
                                                 Columns="10" MaxLength="10" onkeyup="allowonlynumbers('TotEmployTotal');"></asp:TextBox>
@@ -5855,6 +6134,71 @@
                                 care, and arrangement or coordination of care. When a supervisor provides direct 
                                 care, estimate the time involved in direct care, as distinct from supervision of 
                                 other staff or program direction activities
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" bgcolor="#CCCCCC" class="style15" valign="top">
+                                &nbsp;F1b-1.&nbsp;STAFFING AND SUPERVISION</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">        
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Provide information about the Supervising Officers:
+                                Please report if any of the supervision officers are organization employees or Contract employees for Fiscal Year 2024 and 2025? Select from the drop-down menu.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">        
+                                <table class="style32a" border="1" cellpadding="1" cellspacing="0">
+                                    <tr>
+                                        <td style="width:40%"></td>
+                                        <th style="width:30%">FY<%=PreviousYear %></th>
+                                        <th>FY<%=CurrentYear %></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Medical Director</td>
+                                        <td><asp:DropDownList ID="dlstMedDirectorPY" runat="server">
+                                                <asp:ListItem Text="Select" Value="" />
+                                                <asp:ListItem Text="Organization Employee" Value="Organization Employee" />
+                                                <asp:ListItem Text="Contract Employee" Value="Contract Employee" />
+                                            </asp:DropDownList>
+                                        </td>
+                                        <td><asp:DropDownList ID="dLstMedDirectorCY" runat="server">
+                                                <asp:ListItem Text="Select" Value="" />
+                                                <asp:ListItem Text="Organization Employee" Value="Organization Employee" />
+                                                <asp:ListItem Text="Contract Employee" Value="Contract Employee" />
+                                            </asp:DropDownList>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Administrator</td>
+                                        <td><asp:DropDownList ID="dLstAdminPY" runat="server">
+                                                <asp:ListItem Text="Select" Value="" />
+                                                <asp:ListItem Text="Organization Employee" Value="Organization Employee" />
+                                                <asp:ListItem Text="Contract Employee" Value="Contract Employee" />
+                                            </asp:DropDownList>
+                                        </td>
+                                        <td><asp:DropDownList ID="dLstAdminCY" runat="server">
+                                                <asp:ListItem Text="Select" Value="" />
+                                                <asp:ListItem Text="Organization Employee" Value="Organization Employee" />
+                                                <asp:ListItem Text="Contract Employee" Value="Contract Employee" />
+                                            </asp:DropDownList>
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
                         </tr>
                         
@@ -6011,6 +6355,10 @@
                                         </td>
                                     </tr>
                                 </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
                             </td>
                         </tr>
                         <tr>
@@ -6455,18 +6803,23 @@ H7. Facility Staffing by Discipline<br />
             </td>
         </tr>
         <tr>
-            <td>
+            <td width="500px">
+                Calculation:<br />
                 Total FTEs: Divide paid hours by 2080. Include vacation, sick leave, education leave, and all other time normally compensated by the agency. Categorize your FTEs as you do for the Medicare Hospice Cost Report. Include hourly, salaried and contract staff.
-            </td>
-            <td>
-                &nbsp;
+            </td >
+            <td width="100px" > &nbsp;
             </td>
         </tr>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" >
         <tr>
             <td>
                 &nbsp;
             </td>
-            <td align="right">
+            <td>Total Inpatient Facility Employee FTEs
+            </td>
+            <td>Total Inpatient Staffing Agency FTE</td>
+            <td align="center">
                 Total Inpatient Facility FTEs
             </td>
         </tr>
@@ -6478,8 +6831,30 @@ H7. Facility Staffing by Discipline<br />
                 <i>Do <u>not</u> include supervisors or other clinical administrators unless a portion
                     of their time is spent in direct care.</i>
             </td>
-            <td align="right">
+            <td align="center">
+                <%#Eval("EmpNursing")%>
+            </td>
+            <td align="center">
+                <%#Eval("StaffNursing")%>
+            </td>
+            <td align="center">
                 <%#Eval("FTENursingIF1")%>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Nursing Practitioner</b><br />
+                Include RNs and LPNs
+                <br />Include nurses with an advanced degree who function and are licensed as a Nurse Practitioner
+            </td>
+            <td align="center">
+                <%#Eval("EmpNursingPract")%>
+            </td>
+            <td align="center">
+                <%#Eval("StaffNursingPract")%>
+            </td>
+            <td align="center">
+                <%#Eval("FTENursingPractIF1")%>
             </td>
         </tr>
         <tr>
@@ -6490,7 +6865,13 @@ H7. Facility Staffing by Discipline<br />
                 <br />
                 <i>Do <u>not</u> include chaplains or bereavement staff</i>
             </td>
-            <td align="right">
+            <td align="center">
+                <%#Eval("EmpSocialServ")%>
+            </td>
+            <td align="center">
+                <%#Eval("StaffSocialServ")%>
+            </td>
+            <td align="center">
                 <%#Eval("FTESocialIF1")%>
             </td>
         </tr>
@@ -6498,7 +6879,13 @@ H7. Facility Staffing by Discipline<br />
             <td>
                 <b>Hospice Aides</b>
             </td>
-            <td align="right">
+            <td align="center">
+                <%#Eval("EmpHHA")%>
+            </td>
+            <td align="center">
+                <%#Eval("StaffHHA")%>
+            </td>
+            <td align="center">
                 <%#Eval("FTEHHAIF1")%>
             </td>
         </tr>
@@ -6508,7 +6895,13 @@ H7. Facility Staffing by Discipline<br />
                 Include medical directors and other physicians providing direct care to patients
                 and participating in clinical support. <i>Exclude volunteer physicians</i>
             </td>
-            <td align="right">
+            <td align="center">
+                <%#Eval("EmpMD")%>
+            </td>
+            <td align="center">
+                <%#Eval("StaffMD")%>
+            </td>
+            <td align="center">
                 <%#Eval("FTEMDIF1")%>
             </td>
         </tr>
@@ -6516,15 +6909,27 @@ H7. Facility Staffing by Discipline<br />
             <td>
                 <b>Physicians – Volunteer</b>
             </td>
-            <td align="right">
+            <td align="center">
+                <%#Eval("EmpMDVol")%>
+            </td>
+            <td align="center">
+                <%#Eval("StaffMDVol")%>
+            </td>
+            <td align="center">
                 <%#Eval("FTEMDVolIF1")%>
             </td>
         </tr>
         <tr>
             <td>
                 <b>Chaplains</b>
+            <td align="center">
+                <%#Eval("EmpChap")%>
             </td>
-            <td align="right">
+            <td align="center">
+                <%#Eval("StaffChap")%>
+            </td>
+            </td>
+            <td align="center">
                 <%#Eval("FTEChapIF1")%>
             </td>
         </tr>
@@ -6536,7 +6941,13 @@ H7. Facility Staffing by Discipline<br />
                 to patients or families. Include therapists, and dietitians.<br />
                 <i>Do <u>not</u> include volunteers or bereavement staff.</i>
             </td>
-            <td align="right">
+            <td align="center">
+                <%#Eval("EmpOtherClinical")%>
+            </td>
+            <td align="center">
+                <%#Eval("StaffOtherClinical")%>
+            </td>
+            <td align="center">
                 <%#Eval("FTEOtherClinicalIF1")%>
             </td>
         </tr>
@@ -6546,8 +6957,29 @@ H7. Facility Staffing by Discipline<br />
                 <br />
                 Include all administrative and general staff or contracted staff.
             </td>
-            <td align="right">
+            <td align="center">
+                <%#Eval("EmpNonClinical")%>
+            </td>
+            <td align="center">
+                <%#Eval("StaffNonClinical")%>
+            </td>
+            <td align="center">
                 <%#Eval("FTENonClinicalIF1")%>
+            </td>
+        </tr>
+        <tr><td colspan="4">&nbsp;</td></tr>
+        <tr>
+            <td>
+                <b>Total</b>
+            </td>
+            <td align="center">
+                <%#Eval("EmpTotal")%>
+            </td>
+            <td align="center">
+                <%#Eval("StaffTotal")%>
+            </td>
+            <td align="center">
+                <%#Eval("FTETotal")%>
             </td>
         </tr>
     </table>
@@ -6587,7 +7019,11 @@ County:&nbsp; <%# Find_County(Eval("ResCounty1"))%> <br /><br />
 I2. Where is the inpatient facility sited?<br />
 <%#Find_Sited(Eval("ResSite1"))%>&nbsp; &nbsp; &nbsp; <%#Eval("ResOther_text1")%> <br /><br />
 
-I3. How many beds does the residential facility have?&nbsp;&nbsp;<%#Eval("ResBeds1")%><br /><br />I4. Patient Care Services
+I3. How many beds does the residential facility have?&nbsp;&nbsp;<%#Eval("ResBeds1")%><br /><br />
+I3a. Report the number of private rooms at the facility. Private Room (one bed ) &nbsp;&nbsp;<%#Eval("PrivateRoom")%><br /><br />
+I3b. Report the number of semi-private rooms at the facility. Semi-Private Room (two beds)  &nbsp;&nbsp;<%#Eval("SemiPrivateRoom")%><br /><br />      
+    
+I4. Patient Care Services
 <table  border="0" cellpadding="0" cellspacing="0" >
                                     
                                     <tr>
@@ -6622,7 +7058,7 @@ I3. How many beds does the residential facility have?&nbsp;&nbsp;<%#Eval("ResBed
                                     </tr>
                                      <tr>
                                         <td width="425px">
-                                            Patient Days for Patients who died or were discharged this year</td>
+                                            Patient Days for Patients who died or were discharged in FY <%=CurrentYear %></td>
                                         <td>
                                         <%#Eval("ResDays1")%>
                                         </td>
@@ -6646,15 +7082,24 @@ I6. Facility Staffing by Discipline<br />
         </tr>
         <tr>
             <td>
+                Calculation:<br />
                 Total FTEs: Divide paid hours by 2080. Include vacation, sick leave, education leave, and all other time normally compensated by the agency. Categorize your FTEs as you do for the Medicare Hospice Cost Report. Include hourly, salaried and contract staff.
             </td>
             <td>
                 &nbsp;
             </td>
         </tr>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" >
         <tr>
             <td>
                 &nbsp;
+            </td>
+            <td align="right">
+                Total Hospice House Employee FTEs
+            </td>
+            <td align="right">
+                Total Hospice House Staffing Agency FTEs
             </td>
             <td align="right">
                 Total Hospice House FTEs
@@ -6669,7 +7114,28 @@ I6. Facility Staffing by Discipline<br />
                     of their time is spent in direct care.</i>
             </td>
             <td align="right">
+                <%#Eval("ResEmpNurs")%>
+            </td>
+            <td align="right">
+                <%#Eval("ResStaffNurs")%>
+            </td>
+            <td align="right">
                 <%#Eval("ResNursFTE1")%>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Nurse Practitioner</b><br />
+                Include nurses with an advanced degree who function and are licensed as a Nurse Practitioner.
+            </td>
+            <td align="right">
+                <%#Eval("ResEmpNursPract")%>
+            </td>
+            <td align="right">
+                <%#Eval("ResStaffNursPract")%>
+            </td>
+            <td align="right">
+                <%#Eval("ResNursPractFTE1")%>
             </td>
         </tr>
         <tr>
@@ -6681,12 +7147,24 @@ I6. Facility Staffing by Discipline<br />
                 <i>Do <u>not</u> include chaplains or bereavement staff</i>
             </td>
             <td align="right">
+                <%#Eval("ResEmpSS")%>
+            </td>
+            <td align="right">
+                <%#Eval("ResStaffSS")%>
+            </td>
+            <td align="right">
                 <%#Eval("ResSSFTE1")%>
             </td>
         </tr>
         <tr>
             <td>
                 <b>Hospice Aides</b>
+            </td>
+            <td align="right">
+                <%#Eval("ResEmpHHA")%>
+            </td>
+            <td align="right">
+                <%#Eval("ResStaffHHA")%>
             </td>
             <td align="right">
                 <%#Eval("ResHHAFTE1")%>
@@ -6699,6 +7177,12 @@ I6. Facility Staffing by Discipline<br />
                 and participating in clinical support. <i>Exclude volunteer physicians</i>
             </td>
             <td align="right">
+                <%#Eval("ResEmpPhy")%>
+            </td>
+            <td align="right">
+                <%#Eval("ResStaffPhy")%>
+            </td>
+            <td align="right">
                 <%#Eval("ResPhyPFTE1")%>
             </td>
         </tr>
@@ -6707,12 +7191,24 @@ I6. Facility Staffing by Discipline<br />
                 <b>Physicians – Volunteer</b>
             </td>
             <td align="right">
+                <%#Eval("ResEmpPhyVol")%>
+            </td>
+            <td align="right">
+                <%#Eval("ResStaffPhyVol")%>
+            </td>
+            <td align="right">
                 <%#Eval("ResPhyVFTE1")%>
             </td>
         </tr>
         <tr>
             <td>
                 <b>Chaplains</b>
+            </td>
+            <td align="right">
+                <%#Eval("ResEmpChap")%>
+            </td>
+            <td align="right">
+                <%#Eval("ResStaffChap")%>
             </td>
             <td align="right">
                 <%#Eval("ResChapFTE1")%>
@@ -6727,6 +7223,12 @@ I6. Facility Staffing by Discipline<br />
                 <i>Do <u>not</u> include volunteers or bereavement staff.</i>
             </td>
             <td align="right">
+                <%#Eval("ResEmpOth")%>
+            </td>
+            <td align="right">
+                <%#Eval("ResStaffOth")%>
+            </td>
+            <td align="right">
                 <%#Eval("ResOthFTE1")%>
             </td>
         </tr>
@@ -6737,7 +7239,27 @@ I6. Facility Staffing by Discipline<br />
                 Include all administrative and general staff or contracted staff.
             </td>
             <td align="right">
+                <%#Eval("ResEmpNon")%>
+            </td>
+            <td align="right">
+                <%#Eval("ResStaffNon")%>
+            </td>
+            <td align="right">
                 <%#Eval("ResNonFTE1")%>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Total</b>
+            </td>
+            <td align="right">
+                <%#Eval("ResEmpTotal")%>
+            </td>
+            <td align="right">
+                <%#Eval("ResStaffTotal")%>
+            </td>
+            <td align="right">
+                <%#Eval("ResFTETotal")%>
             </td>
         </tr>
     </table>

@@ -152,8 +152,7 @@
             document.getElementById(textId1).value = sumInputs(inputs);
             inputs = document.querySelectorAll(clsName2);
             document.getElementById(textId2).value = sumInputs(inputs);
-
-            document.getElementById('ResFTETotal').value = parseFloat(document.getElementById('ResEmpTotal').value) + parseFloat(document.getElementById('ResStaffTotal').value)
+            document.getElementById('ResFTETotal').value = (isNaN(parseFloat(document.getElementById('ResEmpTotal').value)) ? 0 : parseFloat(document.getElementById('ResEmpTotal').value)) + (isNaN(parseFloat(document.getElementById('ResStaffTotal').value)) ? 0 : parseFloat(document.getElementById('ResStaffTotal').value));
         }
     </script>	
     <style type="text/css">

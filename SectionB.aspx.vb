@@ -380,20 +380,20 @@ Partial Class SectionB
 
             'New Code 07/06/2026
             'PALLIATIVE CARE CENSUS
-            If Len(DBReader("TotalAdmission2024") & "") > 0 Then txtAdmissionsPY.Text = DBReader("TotalAdmission2024")
-            If Len(DBReader("TotalAdmission2025") & "") > 0 Then txtAdmissionsCY.Text = DBReader("TotalAdmission2025")
-            If Len(DBReader("TotalDischarge2024") & "") > 0 Then txtDischargePY.Text = DBReader("TotalDischarge2024")
-            If Len(DBReader("TotalDischarge2025") & "") > 0 Then txtDischargeCY.Text = DBReader("TotalDischarge2025")
-            If Len(DBReader("TotalTransfer2024") & "") > 0 Then txtTransferPY.Text = DBReader("TotalTransfer2024")
-            If Len(DBReader("TotalTransfer2025") & "") > 0 Then txtTransferCY.Text = DBReader("TotalTransfer2025")
-            If Len(DBReader("TotalPalCareDeath2024") & "") > 0 Then txtDeathPY.Text = DBReader("TotalPalCareDeath2024")
-            If Len(DBReader("TotalPalCareDeath2025") & "") > 0 Then txtDeathCY.Text = DBReader("TotalPalCareDeath2025")
-            If Len(DBReader("AvgStay2024") & "") > 0 Then txtLOSPY.Text = DBReader("AvgStay2024")
-            If Len(DBReader("AvgStay2025") & "") > 0 Then txtLOSCY.Text = DBReader("AvgStay2025")
-            If Len(DBReader("AvgDailyCensus2024") & "") > 0 Then txtDCPY.Text = DBReader("AvgDailyCensus2024")
-            If Len(DBReader("AvgDailyCensus2025") & "") > 0 Then txtDCCY.Text = DBReader("AvgDailyCensus2025")
-            If Len(DBReader("OccupancyRate2024") & "") > 0 Then txtORPY.Text = DBReader("OccupancyRate2024")
-            If Len(DBReader("OccupancyRate2025") & "") > 0 Then txtORCY.Text = DBReader("OccupancyRate2025")
+            If Len(DBReader("TotalAdmissionPY") & "") > 0 Then txtAdmissionsPY.Text = DBReader("TotalAdmissionPY")
+            If Len(DBReader("TotalAdmissionCY") & "") > 0 Then txtAdmissionsCY.Text = DBReader("TotalAdmissionCY")
+            If Len(DBReader("TotalDischargePY") & "") > 0 Then txtDischargePY.Text = DBReader("TotalDischargePY")
+            If Len(DBReader("TotalDischargeCY") & "") > 0 Then txtDischargeCY.Text = DBReader("TotalDischargeCY")
+            If Len(DBReader("TotalTransferPY") & "") > 0 Then txtTransferPY.Text = DBReader("TotalTransferPY")
+            If Len(DBReader("TotalTransferCY") & "") > 0 Then txtTransferCY.Text = DBReader("TotalTransferCY")
+            If Len(DBReader("TotalPalCareDeathPY") & "") > 0 Then txtDeathPY.Text = DBReader("TotalPalCareDeathPY")
+            If Len(DBReader("TotalPalCareDeathCY") & "") > 0 Then txtDeathCY.Text = DBReader("TotalPalCareDeathCY")
+            If Len(DBReader("AvgStayPY") & "") > 0 Then txtLOSPY.Text = DBReader("AvgStayPY")
+            If Len(DBReader("AvgStayCY") & "") > 0 Then txtLOSCY.Text = DBReader("AvgStayCY")
+            If Len(DBReader("AvgDailyCensusPY") & "") > 0 Then txtDCPY.Text = DBReader("AvgDailyCensusPY")
+            If Len(DBReader("AvgDailyCensusCY") & "") > 0 Then txtDCCY.Text = DBReader("AvgDailyCensusCY")
+            If Len(DBReader("OccupancyRatePY") & "") > 0 Then txtORPY.Text = DBReader("OccupancyRatePY")
+            If Len(DBReader("OccupancyRateCY") & "") > 0 Then txtORCY.Text = DBReader("OccupancyRateCY")
             'PERFORMANCE ON CLINICAL QUALITY MEASURES
             If Len(DBReader("LiveDischarge") & "") > 0 Then txtLiveDischarge.Text = DBReader("LiveDischarge")
             If Len(DBReader("PatientPerct") & "") > 0 Then txtPatientPerct.Text = DBReader("PatientPerct")
@@ -410,26 +410,7 @@ Partial Class SectionB
         'DBReader = Nothing
         surveyDB.TerminateDBOperation()
     End Sub
-#Region "Newcode functions"
-    Private Sub SetCheckboxSelection(ByVal dbReaderValue As Object, ByVal chkBx As CheckBox)
-        If Not IsDBNull(dbReaderValue) Then
-            chkBx.Checked = dbReaderValue
-        End If
-    End Sub
-    Private Sub SetRadiobuttonLstSelection(ByVal dbReaderValue As Object, ByVal rbList As RadioButtonList)
-        If Not IsDBNull(dbReaderValue) Then
-            rbList.Items.FindByValue(dbReaderValue).Selected = True
-        End If
-    End Sub
-    Private Sub SetDropdownLstSelection(ByVal dbReaderValue As Object, ByVal ddList As DropDownList)
-        If Not IsDBNull(dbReaderValue) Then
-            ddList.Items.FindByValue(dbReaderValue).Selected = True
-        End If
-    End Sub
-    Private Function MapTextValueField(ByVal txtBx As TextBox, ByVal dbField As String) As String
-        Return IIf(txtBx.Text.Length > 0, dbField & " = '" & txtBx.Text & "', ", "")
-    End Function
-#End Region
+
     Sub SaveSurvey(ByVal int As Integer)
         'Dim strSQL As String = ""
         'Dim con As New SqlConnection(ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
@@ -644,20 +625,20 @@ Partial Class SectionB
         strSQL = strSQL & " OwnershipChange = '" & rblOwnershipChange.SelectedValue & "',"
 
         'Save PALLIATIVE CARE CENSUS Data
-        strSQL = strSQL & MapTextValueField(txtAdmissionsPY, "TotalAdmission2024")
-        strSQL = strSQL & MapTextValueField(txtAdmissionsCY, "TotalAdmission2025")
-        strSQL = strSQL & MapTextValueField(txtDischargePY, "TotalDischarge2024")
-        strSQL = strSQL & MapTextValueField(txtDischargeCY, "TotalDischarge2025")
-        strSQL = strSQL & MapTextValueField(txtTransferPY, "TotalTransfer2024")
-        strSQL = strSQL & MapTextValueField(txtTransferCY, "TotalTransfer2025")
-        strSQL = strSQL & MapTextValueField(txtDeathPY, "TotalPalCareDeath2024")
-        strSQL = strSQL & MapTextValueField(txtDeathCY, "TotalPalCareDeath2025")
-        strSQL = strSQL & MapTextValueField(txtLOSPY, "AvgStay2024")
-        strSQL = strSQL & MapTextValueField(txtLOSCY, "AvgStay2025")
-        strSQL = strSQL & MapTextValueField(txtDCPY, "AvgDailyCensus2024")
-        strSQL = strSQL & MapTextValueField(txtDCCY, "AvgDailyCensus2025")
-        strSQL = strSQL & MapTextValueField(txtORPY, "OccupancyRate2024")
-        strSQL = strSQL & MapTextValueField(txtORCY, "OccupancyRate2025")
+        strSQL = strSQL & MapTextValueField(txtAdmissionsPY, "TotalAdmissionPY")
+        strSQL = strSQL & MapTextValueField(txtAdmissionsCY, "TotalAdmissionCY")
+        strSQL = strSQL & MapTextValueField(txtDischargePY, "TotalDischargePY")
+        strSQL = strSQL & MapTextValueField(txtDischargeCY, "TotalDischargeCY")
+        strSQL = strSQL & MapTextValueField(txtTransferPY, "TotalTransferPY")
+        strSQL = strSQL & MapTextValueField(txtTransferCY, "TotalTransferCY")
+        strSQL = strSQL & MapTextValueField(txtDeathPY, "TotalPalCareDeathPY")
+        strSQL = strSQL & MapTextValueField(txtDeathCY, "TotalPalCareDeathCY")
+        strSQL = strSQL & MapTextValueField(txtLOSPY, "AvgStayPY")
+        strSQL = strSQL & MapTextValueField(txtLOSCY, "AvgStayCY")
+        strSQL = strSQL & MapTextValueField(txtDCPY, "AvgDailyCensusPY")
+        strSQL = strSQL & MapTextValueField(txtDCCY, "AvgDailyCensusCY")
+        strSQL = strSQL & MapTextValueField(txtORPY, "OccupancyRatePY")
+        strSQL = strSQL & MapTextValueField(txtORCY, "OccupancyRateCY")
 
         'Save PERFORMANCE ON CLINICAL QUALITY MEASURES
         strSQL = strSQL & MapTextValueField(txtLiveDischarge, "LiveDischarge")

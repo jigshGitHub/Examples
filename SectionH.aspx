@@ -176,7 +176,8 @@
         inputs = document.querySelectorAll(clsName2);
         document.getElementById(textId2).value = sumInputs(inputs);
         
-        document.getElementById('FTETotal').value = parseFloat(document.getElementById('EmpTotal').value) + parseFloat(document.getElementById('StaffTotal').value)
+        document.getElementById('FTETotal').value = (isNaN(parseFloat(document.getElementById('EmpTotal').value)) ? 0 : parseFloat(document.getElementById('EmpTotal').value)) + (isNaN(parseFloat(document.getElementById('StaffTotal').value)) ? 0 : parseFloat(document.getElementById('StaffTotal').value));
+
     }
     </script>
     <style type="text/css">
